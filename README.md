@@ -9,6 +9,7 @@ The base endpoint is: https://daodid.id/api/
 
 #### Request
 
+* method: GET
 * path: /authing/check
 * Query Params: 
   
@@ -68,6 +69,7 @@ User owns subaccount will be labeled as: subscriber with authority value 1-99.
 
 
 ### Check if account opened for public
+* method: GET
 * path: /authing/opened
 * Query Params: 
   
