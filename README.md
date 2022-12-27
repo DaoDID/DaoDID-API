@@ -21,8 +21,8 @@ The base endpoint is: https://daodid.id/api/
 User who doesn't own any subaccount nor paid, will be labeled as no_auth with authority value: -1
 ```json
 {
-    "err_no": 1,
-    "err_msg": "fail",
+    "err_no": 0,
+    "err_msg": "ok",
     "data": {
         "sAddress": "0xc4091AF0ad28b1964F5eea9C3827b815c8c86F3B",
         "sAccount": "2077.bit",
