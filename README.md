@@ -34,7 +34,7 @@ The base endpoint is: https://daodid.id/api/
 * authing：1-99 higher value, higher authority. User can define authority value on DaoDID control pannel. (default value for subscriber: 1)
 
 
-### check if account opened for public
+### Check if account opened for public
 * path: /authing/opened
 * Query Params: 
   
