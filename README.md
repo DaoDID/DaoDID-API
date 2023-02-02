@@ -105,3 +105,32 @@ User owns subaccount will be labeled as: subscriber with authority value 1-99.
 }
 ```
 * priceProfile shows the price config for all available prefix length
+
+
+
+
+### Check the lowest price by given account
+* method: GET
+* path: /public/lowprice
+* Query Params: 
+  
+  sAccount:  2077.bit
+  
+  #### Response
+
+```json
+{
+    "err_no": 0,
+    "data": {
+        "sAccount": "2077.bit",
+        "fLowestPrice": 6
+    }
+}
+```
+if there is no price profile, it returns error: 
+```json
+{
+    "err_no": 1,
+    "err_msg": "no lowest price"
+}
+```
