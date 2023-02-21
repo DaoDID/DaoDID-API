@@ -74,7 +74,19 @@ User owns subaccount will be labeled as: subscriber with authority value 1-99.
 * Query Params: 
   
   sAccount:  2077.bit
-  
+* Response: 
+subaccountType:
+
+1 - subaccount provider: daodid (it means everything set well, your account is ready to mint subaccount on DaoDID)  
+
+2 - subaccount provider: superdid (you need to clear price config on superdid then goes to DaoDID console to complete authorization)
+
+3 - you need to set up price config on DaoDID 
+
+4 - you need to set up manager account (or just click Authorize button from DaoDID console) 
+
+5 - subaccount not opened 
+
   #### Response
 
 ```json
@@ -105,7 +117,17 @@ User owns subaccount will be labeled as: subscriber with authority value 1-99.
 }
 ```
 * priceProfile shows the price config for all available prefix length
-
+ 
+```json
+{
+   "err_no": 0,
+   "err_msg": "ok",
+   "data": {
+        "isOpened": false,
+         "subaccountType": 4
+   }
+}
+```
 
 
 
