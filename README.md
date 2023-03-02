@@ -197,3 +197,23 @@ iPrefixLenStart， iPrefixLenEnd indicate the boundary of a price set. for examp
 }
 ```
 represents the price for subaccounts with a length of 1 to 10 characters. Each subaccount charges 1.5 USDT and it is not a free mint.
+
+
+### Check balance (public read)
+* method: GET
+* path: /public/balance
+* Query Params: 
+  
+  sAccount:  2077.bit
+  
+  #### Response
+
+```json
+{
+    "err_no": 0,
+    "data": {
+        "fAvailableProfit": 2.49804
+    }
+}
+```
+To ensure user privacy, a balance switch has been implemented in DaoDID console. Only when a user turns on this switch can their true balance information be obtained through public APIs.
