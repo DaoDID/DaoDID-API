@@ -156,3 +156,44 @@ if there is no price profile, it returns error:
     "err_msg": "no lowest price"
 }
 ```
+
+### Check price config (public read)
+* method: GET
+* path: /public/priceconfig
+* Query Params: 
+  
+  sAccount:  2077.bit
+  
+  #### Response
+
+```json
+{
+    "err_no": 0,
+    "data": {
+        "vSubAccountList": [
+            {
+                "iPrefixLenStart": 1,
+                "iPrefixLenEnd": 10,
+                "fPrice": 1.5,
+                "bFree": false
+            },
+            {
+                "iPrefixLenStart": 11,
+                "iPrefixLenEnd": 11,
+                "fPrice": 2,
+                "bFree": false
+            }
+       ]
+    }
+}
+```
+iPrefixLenStart， iPrefixLenEnd indicate the boundary of a price set. for example:
+```
+{
+"iPrefixLenStart": 1,
+"iPrefixLenEnd": 10,
+"fPrice": 1.5,
+"bFree": false
+}
+```
+represents the price for subaccounts with a length of 1 to 10 characters. Each subaccount charges 1.5 USDT and it is not a free mint.
