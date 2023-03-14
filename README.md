@@ -170,7 +170,7 @@ if there is no price profile, it returns error:
 {
     "err_no": 0,
     "data": {
-        "vSubAccountList": [
+        "vSubAccountPriceList": [
             {
                 "iPrefixLenStart": 1,
                 "iPrefixLenEnd": 10,
